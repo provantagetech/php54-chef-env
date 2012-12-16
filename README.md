@@ -64,7 +64,24 @@ Install ruby and vagrant on your instance
 
 It will also generate a json file in the ```/nodes``` folder. replace its contents with
 
-```...```
+```
+  { "run_list": [
+	"recipe[apt]", 
+	"recipe[chef-dotdeb]", 
+	"recipe[chef-dotdeb::php54]", 
+	"recipe[apache2]",
+	"recipe[apache2::mod_php5]",
+	"recipe[apache2::mod_rewrite]",
+	"recipe[php]",
+	"recipe[mysql]",
+	"recipe[sqlite]",
+    "recipe[php]",
+    "recipe[vim]",
+    "recipe[zsh]",
+    "recipe[cron]",
+    "recipe[ntp]"
+] }
+```
 
 Run chef solo on your instance
 

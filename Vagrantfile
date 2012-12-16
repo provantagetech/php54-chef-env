@@ -58,7 +58,6 @@ Vagrant::Config.run do |config|
     chef.add_recipe("zsh")
     chef.add_recipe("cron")
     chef.add_recipe("ntp")
-    chef.add_recipe("apt")
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
   end
