@@ -1,4 +1,4 @@
-# Create chef-solo PHP 5.4 environment
+# Chef solo PHP 5.4 environment
 
 ## Description
 
@@ -18,12 +18,13 @@ Chef solo config files to install a php 5.4 environment that can be used with va
 
 ## Installation
 
-### install and vagrant
+### install and run vagrant
 
 ``` $ gem install vagrant```
+
 ``` $ vagrant up```
 
-When vagrant is done, you should see the apache default ```index.html``` file in the ```www``` folder. Open ```http://localhost:8080/``` in the browser to test it.
+When vagrant is done, you should see the apache default ```index.html``` file in the ```www``` folder. Open [http://localhost:8080/](http://localhost:8080/) to test it.
 
 ## Run on an EC2 instance
 
