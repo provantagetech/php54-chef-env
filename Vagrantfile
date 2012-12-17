@@ -42,22 +42,9 @@ Vagrant::Config.run do |config|
   #
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "recipes/cookbooks"
-    # chef.roles_path = "../my-recipes/roles"
-    # chef.add_role "web"
+    chef.roles_path = "recipes/roles"
+    chef.add_role "web"
     # chef.data_bags_path = "../my-recipes/data_bags"
-    chef.add_recipe("apt")
-    chef.add_recipe("chef-dotdeb")
-    chef.add_recipe("chef-dotdeb::php54")
-    chef.add_recipe("apache2")
-    chef.add_recipe("apache2::mod_php5")
-    chef.add_recipe("apache2::mod_rewrite")
-    chef.add_recipe("mysql")
-    chef.add_recipe("sqlite")
-    chef.add_recipe("php")
-    chef.add_recipe("vim")
-    chef.add_recipe("zsh")
-    chef.add_recipe("cron")
-    chef.add_recipe("ntp")
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
   end
