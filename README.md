@@ -25,6 +25,10 @@ Chef solo config files to install a php 5.4 environment that can be used with va
 
 When vagrant is done, you should see the apache default ```index.html``` file in the ```www``` folder. Open [http://localhost:8080/](http://localhost:8080/) to test it.
 
+### git submodules
+    
+    $ git submodule init && git submodule update
+
 ## Run on an EC2 instance
 
 ### Requirements
